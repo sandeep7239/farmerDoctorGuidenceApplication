@@ -1,0 +1,128 @@
+/* Maintain existing style */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1E293B;
+    color: #E2E8F0;
+}
+
+.weather-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1E293B;
+    height: 100vh;
+    padding-top: 5rem; /* Add padding to ensure the input is visible below the navbar */
+    color: #E2E8F0;
+}
+
+.weather-input {
+    margin-top: 2rem;
+}
+
+.weather-input input {
+    background-color: #1E293B;
+    border: 1px solid #64748B;
+    color: #E2E8F0;
+    padding: 0.5rem;
+    width: 15rem;
+    text-align: center;
+}
+
+.weather-content {
+    display: flex;
+    margin-top: 2rem;
+    width: 70%;
+    justify-content: space-around;
+}
+
+.temperature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.temp-value {
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+.condition {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+.location-time {
+    font-size: 1rem;
+    margin-top: 1rem;
+    color: #9CA3AF;
+}
+
+.highlights {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.highlights h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.highlight {
+    background-color: #475569;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+}
+
+.highlight h2 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.humidity-bar {
+    background-color: #E5E7EB;
+    height: 0.375rem;
+    border-radius: 0.375rem;
+    width: 100%;
+    margin-top: 0.5rem;
+}
+
+.humidity-level {
+    background-color: #3B82F6;
+    height: 100%;
+    border-radius: 0.375rem;
+}
+
+/* Add modern and professional styling enhancements */
+.weather-container {
+    background: linear-gradient(to bottom, #20232a, #1E293B);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.weather-input input {
+    border: 1px solid #4B5563;
+    border-radius: 0.25rem;
+    transition: border-color 0.3s ease;
+}
+
+.weather-input input:focus {
+    border-color: #60A5FA;
+}
+
+.highlight {
+    background-color: #374151;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.humidity-bar {
+    background-color: #D1D5DB;
+    border-radius: 0.25rem;
+}
+
+.humidity-level {
+    background-color: #60A5FA;
+}

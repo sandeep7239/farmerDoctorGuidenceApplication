@@ -1,0 +1,105 @@
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.login-card {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 40px 60px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+    animation: fadeIn 1s ease-out;
+}
+
+.login-title {
+    margin-bottom: 30px;
+    font-size: 28px;
+    color: #333;
+    font-weight: 700;
+    border-bottom: 2px solid #6e8efb;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.login-label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #555;
+    text-align: left;
+}
+
+.login-input,
+.login-select {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 25px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.login-input:focus,
+.login-select:focus {
+    border-color: #6e8efb;
+    outline: none;
+    box-shadow: 0 0 5px rgba(110, 142, 251, 0.5);
+}
+
+.login-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #6e8efb;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: #5a78e3;
+}
+
+.login-error {
+    color: #ff4d4d;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.login-register {
+    margin-top: 30px;
+    font-size: 14px;
+    color: #555;
+}
+
+.login-register a {
+    color: #6e8efb;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.login-register a:hover {
+    text-decoration: underline;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

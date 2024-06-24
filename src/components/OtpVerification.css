@@ -1,0 +1,136 @@
+.otp-verification-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.otp-verification-card {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 40px 60px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+    animation: fadeIn 1s ease-out;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.otp-verification-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+.otp-verification-title {
+    margin-bottom: 30px;
+    font-size: 28px;
+    color: #333;
+    font-weight: 700;
+    border-bottom: 2px solid #6e8efb;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.otp-verification-label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #555;
+    text-align: left;
+    font-size: 16px;
+}
+
+/* Input Styles */
+.otp-verification-input {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 25px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.otp-verification-input:focus {
+    border-color: #6e8efb;
+    outline: none;
+    box-shadow: 0 0 5px rgba(110, 142, 251, 0.5);
+}
+
+.otp-verification-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #6e8efb;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.otp-verification-button:hover {
+    background-color: #5a78e3;
+    box-shadow: 0 6px 20px rgba(110, 142, 251, 0.3);
+}
+
+.otp-verification-button:active {
+    background-color: #4a69d4;
+    box-shadow: 0 4px 15px rgba(110, 142, 251, 0.5);
+}
+
+.otp-verification-error {
+    color: #ff4d4d;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+
+.otp-verification-resend {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #555;
+}
+
+.otp-verification-resend a {
+    color: #6e8efb;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.otp-verification-resend a:hover {
+    color: #5a78e3;
+    text-decoration: underline;
+}
+
+/* Keyframes */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@media (max-width: 576px) {
+    .otp-verification-card {
+        padding: 20px 30px;
+    }
+    
+    .otp-verification-title {
+        font-size: 24px;
+    }
+
+    .otp-verification-input, .otp-verification-button {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
